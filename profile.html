@@ -33,55 +33,47 @@
 
   <body>
     <section class="wrapper">
-      <a href="profile.html" id="profile-link">PROFILE</a>
-      <section class="intro">
-        <h1>Hi,
-          <br/>
-          I’m
-          <span>Berke Kiran</span>
-          <span>,  </span>
-          <br/>
-          a self-taught
-          <span>3D Character </span>
-          <br/>
-          <span>Artist</span>
-          <span> & </span>
-          <span>Front-End Developer</span>
-          <span>.  </span>
-        </h1>
-        <div class="intro-img"></div>
+      <a href="http://127.0.0.1:3000/" id="profile-link">WORKS</a>
+
+      <section class="about">
+        <div class="photo"></div>
+        <p>
+          Hello! <span>I’m</span> Berke Kiran <span>a self-taught</span> 3D Character Artist<br>
+          <span>and</span> Front-End Developer<span>.I am specialized in creating </span>3D<br>
+          characters <span>for</span> cinematics<span>, </span>feature film<span>, and </span>games<span>. I love</span><br>
+          art<span>, </span>science<span>, </span>coding<span>, </span>learning new technologies<span> & </span>improving<br>
+          myself<span>. I was born and grew in </span>Turkey<span>. So I can speak </span>Turkish<span>,</span><br>
+          English<span> and little bit</span> German<span>. I started to learning </span>game<br>
+          creation<span> at </span>13<span> years old. Now I am living to </span>learn <span>and</span> create<br>
+          <span>something new </span>every day<span>. I graduated high school in </span>2015<br>
+          <span>with a class rank of </span>second Out of 724 <span>graduates. Then I</span><br>
+          honored<span> with </span>Outstanding Achievement Certificate <span>& now<br>
+          going to </span>KB.University<span> in Karabuk. I'm learning </span>computer<br>
+          engineering.<br>
+          <br>
+          <br>
+          <span>If you have a </span>project<span> you'd like to </span>discuss<span>, feel</span> free<span> to</span> reach out.
+        </p>
       </section>
 
-      <section class="characters">
-        <h1>CHARACTERS</h1>
-        <ul class="characters-ul" ng-controller="CharacterController as ocharacter">
-          <li ng-style="{{elem.Image}}" ng-repeat="elem in ocharacter.character | limitTo:ocharacter.limit" class="character">
-            <a target="_blank" ng-href="{{elem.Link}}">
-              <span class="project-name">{{elem.ProjectName}}</span>
-              <br/>
-              <span class="category-year">{{elem.Category}},  {{elem.Year}}</span>
-            </a>
-          </li>
-          <div class="load-more" ng-click="loadMore()">. Load More .</div>
-      </ul>
-      </section>
-
-      <div class="other-works-img"></div>
-
-      <section class="other-works">
-        <h1>OTHER WORKS</h1>
-        <ul class="other-works-ul" ng-controller="OtherController as other">
-          <li ng-style="{'background-color': '{{elem.Color}}' }"  ng-repeat="elem in other.otherWork | limitTo:other.limit" class="other-work">
-            <a ng-style="{{elem.Image}}" target="_blank" ng-href="{{elem.Link}}">
-              <span class="project-name">{{elem.ProjectName}}</span>
-              <br/>
-              <span class="category-year">{{elem.Category}},  {{elem.Year}}</span>
-            </a>
-          </li>
-          <div class="load-more-o" ng-click="loadMore()">
-            <span>. Load More .</span>
-          </div>
-        </ul>
+      <section class="skills-tools">
+        <h1>MAIN SKILLS & TOOLS</h1>
+        <p>
+          HTML, CSS, SASS, PUG<br>
+          JAVASCRIPT, JQUERY, ANGULARJS, REACTJS<br>
+          DATABASE PROGRAMMING (SQL), PHP, NODEJS<br>
+          ZBRUSH, MAYA, 3dsMax, blender<br>
+          marmoset toolbag 3, Substance Painter 2<br>
+          Marvelous Designer 6, World Machine<br>
+          Adobe After EfFects, Adobe IllustratoR, Adobe Photoshop<br>
+          Unreal Engine 4, Unity 3D, Godot Engine<br>
+          C, C#, JAVA, SILVERLIGHT<br>
+          Responsive Web design<br>
+          Texturing (PBR)<br>
+          Level design and beauty pass<br>
+        </p>
+        <h2>SHOWREEL</h2>
+        <iframe src="https://player.vimeo.com/video/229903690?title=0&byline=0&portrait=0" width="1400" height="790" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </section>
 
       <section class="footer">
