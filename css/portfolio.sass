@@ -1,0 +1,269 @@
+body
+  margin: 0
+  padding: 0
+  background: #161616
+  font-family: 'Open Sans', sans-serif
+  color: #ffffff
+  overflow-x: hidden
+
+::-webkit-scrollbar
+  width: 12px
+
+::-webkit-scrollbar-track
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+
+::-webkit-scrollbar-thumb
+  background: #dfca60
+  border-radius: 10px
+
+.wrapper
+  position: absolute
+  margin-left: auto
+  margin-right: auto
+  left: 0
+  right: 0
+  width: 1600px
+
+  #profile-link
+    position: absolute
+    top: 150px
+    right: 60px
+    font-size: 2rem
+    font-weight: 700
+    letter-spacing: 1.8
+    color: #ffffff
+    text-decoration: none
+    transition: all 0.24s ease
+
+    &:hover
+      opacity: 0.32
+
+.intro
+  margin-top: 348px
+
+  h1
+    margin-left: 134px
+    font-size: 60px
+    font-weight: 700
+    letter-spacing: 8
+    line-height: 90px
+
+    span
+      &:nth-child(2)
+        color: #dfca60
+      &:nth-child(5)
+        color: #dfca60
+      &:nth-child(7)
+        color: #dfca60
+      &:nth-child(9)
+        color: #dfca60
+
+  .intro-img
+    position: relative
+    width: 1600px
+    height: 880px
+    margin-top: 100px
+    background: linear-gradient(0deg, transparent, #161616), url('../images/recent-work.png') center top no-repeat
+    background-size: 160%
+
+.characters
+  margin-top: 144px
+  text-align: center
+  letter-spacing: 3px
+  margin-bottom: 144px
+
+  h1
+    font-size: 50px
+    font-weight: 700
+    margin-bottom: 144px
+
+  .characters-ul
+    display: inline-block
+    width: 1600px
+    padding-left: 0px
+    margin-left: -40px
+    list-style: none
+
+    .character
+      display: inline-block
+      background: linear-gradient(transparent 50%, #161616), #DFCA60
+      width: 370px
+      height: 575px
+      margin-left: 40px
+      margin-bottom: 80px
+      text-align: left
+      opacity: 0.66
+      transition: all 0.24s ease
+
+      &:hover
+        opacity: 1
+        cursor: pointer
+
+      a
+        display: block
+        height: 100%
+        width: 100%
+        color: #ffffff
+        text-decoration: none
+
+.project-name
+  position: absolute
+  margin-top: 465px
+  font-weight: 600
+  font-size: 22px
+  letter-spacing: 1px
+  margin-left: 38px
+
+.category-year
+  position: absolute
+  margin-top: 472px
+  font-weight: 300
+  font-size: 15px
+  letter-spacing: 1px
+  opacity: 0.35
+  margin-left: 38px
+  line-height: 34px
+
+.other-works-img
+  position: relative
+  width: 1600px
+  height: 360px
+  margin-top: 144px
+  background: linear-gradient(0deg, transparent, #161616), url('../images/other-works-img.png') center top no-repeat
+
+.load-more
+  position: relative
+  margin: auto
+  width: 200px
+  color: #dbc75f
+  font-size: 18px
+  font-weight: 600
+  padding-left: 28px
+  padding-right: 28px
+  padding-top: 10px
+  padding-bottom: 10px
+  border-radius: 36px
+  transition: all 0.24s ease
+
+  &:hover
+    cursor: pointer
+    opacity: 0.32
+
+.load-more-o
+  position: relative
+  margin: auto
+  width: 200px
+  color: #dbc75f
+  font-size: 18px
+  font-weight: 600
+  padding-left: 28px
+  padding-right: 28px
+  padding-top: 10px
+  padding-bottom: 10px
+  border-radius: 36px
+  transition: all 0.24s ease
+
+  &:hover
+    cursor: pointer
+    opacity: 0.32
+
+  span
+    margin-left: 40px
+
+
+.other-works
+  margin-top: 144px
+  text-align: center
+  letter-spacing: 3px
+  margin-bottom: 144px
+
+  h1
+    font-size: 50px
+    font-weight: 700
+    margin-bottom: 144px
+
+  .other-works-ul
+    display: inline-block
+    width: 1600px
+    padding-left: 0px
+    margin-left: -40px
+    list-style: none
+
+    .other-work
+      display: inline-block
+      background: linear-gradient(transparent 50%, #161616), #DFCA60
+      width: 370px
+      height: 320px
+      margin-left: 40px
+      margin-bottom: 80px
+      text-align: left
+      opacity: 0.66
+      transition: all 0.24s ease
+
+      &:hover
+        opacity: 1
+        cursor: pointer
+
+      .project-name
+        position: absolute
+        margin-top: 230px
+        font-size: 20px
+
+      .category-year
+        position: absolute
+        margin-top: 234px
+        font-size: 14px
+
+      a
+        display: block
+        height: 100%
+        width: 100%
+        color: #ffffff
+        text-decoration: none
+
+.footer
+  margin-top: 200px
+  text-align: center
+  letter-spacing: 3px
+  margin-bottom: 200px
+
+  hr
+    width: 72px
+    height: 3px
+    border: 0
+    background: #ffffff
+
+  h2
+    margin-top: 144px
+    font-size: 28px
+
+    a
+      color: #ffffff
+      text-decoration: none
+      border-bottom: #ffffff solid 2px
+      transition: all 0.24s ease
+
+      &:hover
+        opacity: 0.32
+
+  h3
+    margin-top: 144px
+    font-size: 16px
+    letter-spacing: 2px
+
+  .social-links
+    display: inline-block
+    width: 1600px
+    padding-left: 0px
+    margin-left: -20px
+    list-style: none
+
+    .social-link
+      display: inline-block
+      margin-left: 20px
+      margin-top: 20px
+      text-align: left
+      transition: all 0.24s ease
+
+      &:hover
+        opacity: 0.32
