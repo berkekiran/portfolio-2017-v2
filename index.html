@@ -20,6 +20,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" />
     <!--Favicons-->
@@ -35,19 +36,11 @@
     <section class="wrapper">
       <a href="profile.html" id="profile-link">PROFILE</a>
       <section class="intro">
-        <h1>Hi,
-          <br/>
-          I’m
-          <span>Berke Kiran</span>
-          <span>,  </span>
-          <br/>
-          a self-taught
-          <span>3D Character </span>
-          <br/>
-          <span>Artist</span>
-          <span> & </span>
-          <span>Front-End Developer</span>
-          <span>.  </span>
+        <h1>
+          <span id="intro0">Hi,<br/></span>
+          <span id="intro1">I’m <span class="yellow">Berke Kiran</span>,<br/></span>
+          <span id="intro2">a self-taught <span class="yellow">3D Character </span><br/></span>
+          <span id="intro3"><span class="yellow">Artist</span> & <span class="yellow">Front-End Developer</span>.</span>
         </h1>
         <div class="intro-img"></div>
       </section>
@@ -55,8 +48,8 @@
       <section class="characters">
         <h1>CHARACTERS</h1>
         <ul class="characters-ul" ng-controller="CharacterController as ocharacter">
-          <li ng-style="{{elem.Image}}" ng-repeat="elem in ocharacter.character | limitTo:ocharacter.limit" class="character">
-            <a target="_blank" ng-href="{{elem.Link}}">
+          <li ng-repeat="elem in ocharacter.character | limitTo:ocharacter.limit" class="character">
+            <a ng-style="{{elem.Image}}" target="_blank" ng-href="{{elem.Link}}">
               <span class="project-name">{{elem.ProjectName}}</span>
               <br/>
               <span class="category-year">{{elem.Category}},  {{elem.Year}}</span>
@@ -96,7 +89,10 @@
       </section>
     </section>
 
+    <script type="text/javascript" src="js/other-works.js"></script>
+    <script type="text/javascript" src="js/characters.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
+    <script type="text/javascript" src="js/animations.js"></script>
   </body>
 
 </html>

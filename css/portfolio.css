@@ -4,7 +4,8 @@ body {
   background: #161616;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  opacity: 0; }
 
 ::-webkit-scrollbar {
   width: 12px; }
@@ -36,6 +37,9 @@ body {
     .wrapper #profile-link:hover {
       opacity: 0.32; }
 
+.yellow {
+  color: #dfca60; }
+
 .intro {
   margin-top: 348px; }
   .intro h1 {
@@ -44,21 +48,22 @@ body {
     font-weight: 700;
     letter-spacing: 8;
     line-height: 90px; }
-    .intro h1 span:nth-child(2) {
-      color: #dfca60; }
-    .intro h1 span:nth-child(5) {
-      color: #dfca60; }
-    .intro h1 span:nth-child(7) {
-      color: #dfca60; }
-    .intro h1 span:nth-child(9) {
-      color: #dfca60; }
   .intro .intro-img {
     position: relative;
     width: 1600px;
     height: 880px;
     margin-top: 100px;
     background: linear-gradient(0deg, transparent, #161616), url("../images/recent-work.png") center top no-repeat;
-    background-size: 160%; }
+    background-size: 160%;
+    opacity: 0; }
+  .intro #intro0 {
+    opacity: 0; }
+  .intro #intro1 {
+    opacity: 0; }
+  .intro #intro2 {
+    opacity: 0; }
+  .intro #intro3 {
+    opacity: 0; }
 
 .characters {
   margin-top: 144px;
@@ -77,23 +82,24 @@ body {
     list-style: none; }
     .characters .characters-ul .character {
       display: inline-block;
-      background: linear-gradient(transparent 50%, #161616), #DFCA60;
       width: 370px;
       height: 575px;
       margin-left: 40px;
       margin-bottom: 80px;
       text-align: left;
-      opacity: 0.66;
-      transition: all 0.24s ease; }
-      .characters .characters-ul .character:hover {
-        opacity: 1;
-        cursor: pointer; }
+      opacity: 0; }
       .characters .characters-ul .character a {
         display: block;
         height: 100%;
         width: 100%;
         color: #ffffff;
-        text-decoration: none; }
+        text-decoration: none;
+        opacity: 0.66;
+        background: linear-gradient(transparent 50%, #161616), #DFCA60;
+        transition: all 0.24s ease; }
+        .characters .characters-ul .character a:hover {
+          opacity: 1;
+          cursor: pointer; }
 
 .project-name {
   position: absolute;
@@ -179,11 +185,7 @@ body {
       margin-left: 40px;
       margin-bottom: 80px;
       text-align: left;
-      opacity: 0.66;
-      transition: all 0.24s ease; }
-      .other-works .other-works-ul .other-work:hover {
-        opacity: 1;
-        cursor: pointer; }
+      opacity: 0; }
       .other-works .other-works-ul .other-work .project-name {
         position: absolute;
         margin-top: 230px;
@@ -197,7 +199,12 @@ body {
         height: 100%;
         width: 100%;
         color: #ffffff;
-        text-decoration: none; }
+        opacity: 0.66;
+        text-decoration: none;
+        transition: all 0.24s ease; }
+        .other-works .other-works-ul .other-work a:hover {
+          opacity: 1;
+          cursor: pointer; }
 
 .footer {
   margin-top: 200px;
