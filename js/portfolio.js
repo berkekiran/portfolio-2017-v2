@@ -15,7 +15,7 @@ app.controller('SocialController', function($scope) {
 
 });
 
-app.controller('CharacterController', function($scope,$timeout) {
+app.controller('CharacterController', function($scope) {
 
   var vm = this;
   vm.character = characters;
@@ -25,15 +25,11 @@ app.controller('CharacterController', function($scope,$timeout) {
   var increamented = vm.limit + 3;
   vm.limit = increamented > vm.character.length ? vm.character.length : increamented;
 
-  for(var j = 3;j<vm.limit;j++) {
-    $('.other-work').eq(j).velocity({ opacity: 1 }, 600);
-    console.log(j);
-  }
-
-  if(vm.limit+1 >= vm.character.length){
+  if(vm.limit >= vm.character.length){
     $('.load-more').css("opacity","0");
     $('.load-more').css("cursor","default");
-    $('.load-more').css("margin-top","-5vh");
+    $('.load-more').css("margin-top","-144px");
+    $('.load-more').css("margin-bottom","-96px");
   }
 
  };
@@ -41,7 +37,7 @@ app.controller('CharacterController', function($scope,$timeout) {
 });
 
 
-app.controller('OtherController', function($scope,$timeout) {
+app.controller('OtherController', function($scope) {
 
   var vm = this;
   vm.otherWork = otherWorks;
@@ -51,17 +47,11 @@ app.controller('OtherController', function($scope,$timeout) {
     var increamented = vm.limit + 3;
     vm.limit = increamented > vm.otherWork.length ? vm.otherWork.length : increamented;
 
-    for(var i = 5;i<vm.limit;i+=3) {
-      $('.other-work').eq(i).velocity({ opacity: 1 }, i*80);
-      $('.other-work').eq(i+1).velocity({ opacity: 1 }, (i-1)*80);
-      $('.other-work').eq(i+2).velocity({ opacity: 1 }, (i-2)*80);
-      console.log(i);
-    }
-
-    if(vm.limit+3 >= vm.otherWork.length){
+    if(vm.limit >= vm.otherWork.length){
       $('.load-more-o').css("opacity","0");
       $('.load-more-o').css("cursor","default");
-      $('.load-more-o').css("margin-top","-5vh");
+      $('.load-more-o').css("margin-top","-144px");
+      $('.load-more-o').css("margin-bottom","-96px");
     }
 
  };

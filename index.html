@@ -48,7 +48,7 @@
       <section class="characters">
         <h1>CHARACTERS</h1>
         <ul class="characters-ul" ng-controller="CharacterController as ocharacter">
-          <li ng-repeat="elem in ocharacter.character | limitTo:ocharacter.limit" class="character">
+          <li ng-style="characterstyle" ng-repeat="elem in ocharacter.character | limitTo:ocharacter.limit" class="character">
             <a ng-style="{{elem.Image}}" target="_blank" ng-href="{{elem.Link}}">
               <span class="project-name">{{elem.ProjectName}}</span>
               <br/>
